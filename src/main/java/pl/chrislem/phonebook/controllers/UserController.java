@@ -1,4 +1,4 @@
-package pl.oskarpolak.phonebook.controllers;
+package pl.chrislem.phonebook.controllers;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,9 +8,9 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import pl.oskarpolak.phonebook.models.forms.LoginForm;
-import pl.oskarpolak.phonebook.models.forms.RegisterForm;
-import pl.oskarpolak.phonebook.models.services.UserService;
+import pl.chrislem.phonebook.models.services.UserService;
+import pl.chrislem.phonebook.models.forms.LoginForm;
+import pl.chrislem.phonebook.models.forms.RegisterForm;
 
 import javax.validation.Valid;
 

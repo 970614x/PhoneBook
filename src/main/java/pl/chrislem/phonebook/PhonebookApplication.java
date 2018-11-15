@@ -1,4 +1,4 @@
-package pl.oskarpolak.phonebook;
+package pl.chrislem.phonebook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

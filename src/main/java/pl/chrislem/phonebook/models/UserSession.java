@@ -1,10 +1,10 @@
-package pl.oskarpolak.phonebook.models;
+package pl.chrislem.phonebook.models;
 
 import lombok.Data;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
-import pl.oskarpolak.phonebook.models.entities.UserEntity;
+import pl.chrislem.phonebook.models.entities.UserEntity;
 
 @Component //@Service == @Component == @Controller == @Repository
 @Scope(scopeName = "session", proxyMode = ScopedProxyMode.TARGET_CLASS)

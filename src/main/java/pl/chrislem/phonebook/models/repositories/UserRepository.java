@@ -1,9 +1,9 @@
-package pl.oskarpolak.phonebook.models.repositories;
+package pl.chrislem.phonebook.models.repositories;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import pl.oskarpolak.phonebook.models.entities.UserEntity;
+import pl.chrislem.phonebook.models.entities.UserEntity;
 
 import java.util.Optional;
 

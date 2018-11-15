@@ -1,12 +1,12 @@
-package pl.oskarpolak.phonebook.models.services;
+package pl.chrislem.phonebook.models.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pl.oskarpolak.phonebook.models.UserSession;
-import pl.oskarpolak.phonebook.models.forms.LoginForm;
-import pl.oskarpolak.phonebook.models.forms.RegisterForm;
-import pl.oskarpolak.phonebook.models.entities.UserEntity;
-import pl.oskarpolak.phonebook.models.repositories.UserRepository;
+import pl.chrislem.phonebook.models.UserSession;
+import pl.chrislem.phonebook.models.forms.LoginForm;
+import pl.chrislem.phonebook.models.forms.RegisterForm;
+import pl.chrislem.phonebook.models.entities.UserEntity;
+import pl.chrislem.phonebook.models.repositories.UserRepository;
 
 import java.util.Optional;
 
