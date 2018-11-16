@@ -15,11 +15,14 @@ public class UserService {
 
     final UserRepository userRepository;
     final UserSession userSession;
+    final PasswordHashingService passwordHashingService;
+
 
     @Autowired
-    public UserService(UserRepository userRepository, UserSession userSession) {
+    public UserService(UserRepository userRepository, UserSession userSession, PasswordHashingService passwordHashingService) {
         this.userRepository = userRepository;
         this.userSession = userSession;
+        this.passwordHashingService = passwordHashingService;
     }
 
     public boolean checkIfLoginExists(String login){
