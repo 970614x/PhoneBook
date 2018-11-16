@@ -32,7 +32,7 @@ public class UserService {
     public void addUser(RegisterForm userForm){
         UserEntity newUser = new UserEntity();
         newUser.setLogin(userForm.getLogin());
-        newUser.setPassword(userForm.getPassword());
+        newUser.setPassword(passwordHashingService.hash(userForm.getPassword()));
 
         userRepository.save(newUser);
     }
