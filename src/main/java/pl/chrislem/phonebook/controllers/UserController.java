@@ -66,6 +66,5 @@ public class UserController {
         model.addAttribute("loginInfo", "Nie poprawne dane");
         return "loginForm";
     }
-
 }
 

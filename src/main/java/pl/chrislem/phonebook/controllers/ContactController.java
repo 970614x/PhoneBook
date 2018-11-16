@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.chrislem.phonebook.models.services.ContactService;
 import pl.chrislem.phonebook.models.forms.ContactForm;
 
+
 @Controller
 public class ContactController {
 
@@ -62,8 +63,6 @@ public class ContactController {
                 .orElse("Contact with this surname not exist");
 
     }
-
-
 
 
 }

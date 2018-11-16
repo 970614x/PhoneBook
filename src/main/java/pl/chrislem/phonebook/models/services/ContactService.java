@@ -20,29 +20,29 @@ public class ContactService {
     }
 
 
-    public boolean checkIfContactExists(String surname){
+    public boolean checkIfContactExists(String surname) {
         return contactRepository.existsBySurname(surname);
     }
 
-    public void addContact(ContactForm contactForm){
+    public void addContact(ContactForm contactForm) {
         ContactEntity newContact = new ContactEntity();
         newContact.setName(contactForm.getName());
         newContact.setSurname(contactForm.getSurname());
         newContact.setNumber(contactForm.getPhone());
 
 
-       contactRepository.save(newContact);
+        contactRepository.save(newContact);
     }
 
-    public Optional<ContactEntity> findOneContact(int id){
+    public Optional<ContactEntity> findOneContact(int id) {
         return contactRepository.findById(id);
     }
 
-    public Optional<ContactEntity> findOneContact(String surname){
+    public Optional<ContactEntity> findOneContact(String surname) {
         return contactRepository.findContactBySurname(surname);
     }
 
-    public List<ContactEntity> getContacts(){
+    public List<ContactEntity> getContacts() {
         return contactRepository.findAllContacts();
     }
 }
